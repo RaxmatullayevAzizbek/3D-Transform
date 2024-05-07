@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.content {
+    border: 3px solid #555;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    perspective: 600px;
+    margin: 20px;
+}
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: lime;
+    box-shadow: 0 0 10px #777;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-size: 32px;
+    transition: 1s;
+}
+.box1:hover {
+    transform: translateZ(100px);
+}
+.box2:hover {
+    transform: rotateX(45deg);
+    background-color: blueviolet;
+}
+.box3:hover {
+    transform: translate3d(100px, 100px 100px);
+    background-color: red;
+}
+.box4:hover {
+    transform: scale3d(1, 1, 2) rotateX(45deg);
+    background-color: blue;
+}
+.box5:hover {
+    transform: rotate3d(1,1,145deg);
+    background-color: olivedrab;
+}
